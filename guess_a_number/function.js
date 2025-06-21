@@ -3,32 +3,32 @@
 
 function askUserANumber() {
 
-  let givenNumber = prompt('Entrer un nombre');
-  alert(`le numéro , ${givenNumber}`)
+  let input = prompt('choisissez un nombre');
+  let givenNumber = Number(input)
+  alert(`le nombre choisis est ${givenNumber}`)
 }  
 askUserANumber()
 
 
 //Etape 2
 
-let userWrite = Number(givenNumber)
-
 function didIWin(givenNumber) {
     
 if (givenNumber < 22) {
-    alert('Plus grand')  
-}
-if (givenNumber > 22) {
-    alert('Plus petit')  
+    alert('Plus grand'); 
+
+} else if (givenNumber > 22) {
+    alert('Plus petit');  
 }
 else if (givenNumber === 22) {
-    alert('Bravo ! Vous avez deviné le nombre')
+    alert('Bravo ! Vous avez deviné le nombre');
+} 
+else {
+    alert('Veuillez entrer un nombre valide');
 }
-}
+} 
 
-
-
-function gamePlay(){}
+didIWin()
 
 
 //Étape 3
