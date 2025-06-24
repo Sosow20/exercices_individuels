@@ -1,0 +1,17 @@
+body{
+    text-align: center;
+    color: rgb(98, 80, 133);
+}
+
+ input, button {
+      font-size: 24px;   /* Agrandit le texte à l’intérieur */
+      padding: 10px 20px; /* Agrandit la taille du champ/bouton */
+      margin: 10px 0;
+    }
+    button {
+      cursor:auto;
+    }
+
+    input{
+        cursor: url('images/cursor.cur'), auto;
+    }

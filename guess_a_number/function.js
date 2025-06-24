@@ -1,9 +1,9 @@
 
 // Etape 1
 
-function askUserANumber() {
+function askUserANumber(message) {
 
-    let input = prompt('choisissez un nombre');
+    let input = prompt(message);
     let givenNumber = parseInt(input)
     return givenNumber
 }
@@ -38,17 +38,17 @@ function askUserANumber() {
 //     }
 // }
 
-function gamePlay() {
-    while (true) {
-        let number = askUserANumber()
-        let result = didIWin(number)
-        if (result === true) {
-            break
-        } else {
-            continue
-        }
-    }
-}
+// function gamePlay() {
+//     while (true) {
+//         let number = askUserANumber()
+//         let result = didIWin(number)
+//         if (result === true) {
+//             break
+//         } else {
+//             continue
+//         }
+//     }
+// }
 
 // function gamePlay() {
 //     let number = askUserANumber()
@@ -71,12 +71,22 @@ function gamePlay() {
 
 
 
-function askUser1ANumber(input) {
-    const min = 0;
-    const max = 50;
-    
-    
-}
+// function askUser1aNumbertoGuess() {
+//     while (true) {
+//         let input = askUserANumber('choisir un nombre entre 0 et 50')
+
+//         if (input > 50) {
+//             continue
+//         } else if (input < 0) {
+//             continue
+//         } else {
+//             return input
+
+//         }
+//     }
+// }
+
+
 
 function didIWin(givenNumber, numbertoGuess) {
     if (givenNumber === numbertoGuess) {
@@ -87,9 +97,52 @@ function didIWin(givenNumber, numbertoGuess) {
 }
 
 
+// function gamePlay() {
+//     while (true) {
+//         let numbertoGuess = askUser1aNumbertoGuess()
+//         let inputNumber = askUserANumber('choisir nombre a deviner')
+//         let result = didIWin(inputNumber, numbertoGuess)
+
+//         if (result === true) {
+//             alert('gagné')
+//             break
+//         } else {
+//             alert('perdu')
+
+//             continue
+//         }
+//     }
+// }
+
+
+
 
 //Étape 5
 
 
 
+
+// function gamePlay() {
+//     let attempts = 0
+
+//     while (true) {
+//         attempts = attempts + 1
+//         let numbertoGuess = askUser1aNumbertoGuess()
+//         let inputNumber = askUserANumber('choisir nombre a deviner')
+//         let result = didIWin(inputNumber, numbertoGuess)
+
+//         if (result === true) {
+//             alert('gagné')
+//             break
+//         } else {
+//             alert(`perdu, nombre de tentatives = ${attempts}`)
+
+//             continue
+//         }
+//     }
+// }
+
+
+
 //Étape 6
+
