@@ -23,7 +23,7 @@ function translateLatinCharacter(alphabet) {
 function encode(text) {
     const sentence = getLatinCharacterList(text)                            //on divise le text en plusieurs caractères
     const encodeAlphabet = sentence.map(translateLatinCharacter)            // on parcours chaque caractère du tableau en lui attribuant son équivalent morse
-    return encodeAlphabet.join('')                                          // et enfin on rassemble les caractère morse 
+    return encodeAlphabet.join('')                                          // et enfin on rassemble les caractères morse 
 }
 
 console.log(encode('HELLO'))
